@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parth {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia quos laudantium possimus rerum.
+        Veritatis veniam explicabo aut porro, incidunt suscipit. Libero id quasi ratione, esse nisi cum modi? Numquam!
+    </p>
+    <button id="btn1">Add innerHTML</button>
+    <button id="btn2">Add color</button>
+    <button id="btn3">Add css</button>
+    <button id="btn4">remove css</button>
+    <button id="btn5">qu.id</button>
+    <button class="btn6">qu.class</button>
+    <button class="btn7">qu.class</button>
+
+
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, obcaecati!</h6>
+
+
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", function () {
+            document.getElementById("btn1").innerHTML = "<h1>Parth</h1>"
+        })
+
+
+        document.getElementById("btn2").addEventListener("click", function () {
+            document.getElementById("btn2").style.color = "red"
+        })
+
+        document.getElementById("btn3").addEventListener("click", function () {
+            document.getElementById("p1").classList.add("parth")
+        })
+        document.getElementById("btn4").addEventListener("click", function () {
+            document.getElementById("p1").classList.remove("parth")
+        })
+
+
+        document.querySelector("#btn5").addEventListener("click", function () {
+            document.querySelector("h6").style.backgroundColor = "blue"
+        })
+
+
+        document.querySelector(".btn6").addEventListener("click", function () {
+            document.querySelector("h6").style.border = "1px solid green"
+            document.querySelector("h6").style.backgroundColor = ""
+        })
+
+     
+
+
+
+    </script>
+</body>
+
+</html>
